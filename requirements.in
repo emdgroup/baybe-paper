@@ -1,0 +1,8 @@
+baybe[chem,simulation]==0.12.2
+seaborn==0.13.2
+matplotlib==3.9.2
+pandas==2.2.2
+geopandas==1.0.1
+optuna==4.1.0
+scikit-fingerprints==1.12.0
+ipykernel==6.29.5
