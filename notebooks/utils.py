@@ -1,6 +1,7 @@
 import seaborn as sns
 import pandas as pd
 from pathlib import Path
+import matplotlib.pyplot as plt
 
 sns.set_context("paper", font_scale=1.2)
 
@@ -52,3 +53,5 @@ def backtest_plot(
 
     output_path = Path(path, f"{figure_name}.svg")
     ax.figure.savefig(output_path, format="svg", transparent=True)
+    plt.show()
+    plt.close()
