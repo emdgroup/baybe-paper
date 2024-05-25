@@ -15,7 +15,22 @@ def backtest_plot(
     indicator_y: float | None = None,
     indicator_labels: list[str] | None = None,
 ):
-    """Plot utility."""
+    """Plot utility.
+
+    Shows a backtest plot based on seaborn's lineplot and stores the figure. Optionally
+    adds guidelines at what x position a certain y level is hit.
+
+    Args:
+        df: Results of the backtest simulation.
+        figure_name: Name of the .svg file that will be stored in 'path'.
+        y: Name of the column that will be used as y.
+        hue: One line will be plotted for each group in this column.
+        path: The path where the figure will be stored.
+        x: Name of the column that will be used as x.
+        indicator_y: The y level for which indicator lines should be shown.
+        indicator_labels: Subset of entries in the 'hue' column. Indicators will only
+            be shown for those groups.
+    """
     ax = sns.lineplot(
         data=df,
         marker="o",
