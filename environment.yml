@@ -7,4 +7,4 @@ dependencies:
 - matplotlib==3.8.4
 - pandas==2.2.2
 - pip:
-  - baybe[chem,simulation]==0.8.2
+  - baybe[chem,simulation]==0.9.0
