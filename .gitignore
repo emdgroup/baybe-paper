@@ -1,2 +1,8 @@
 **/.ipynb_checkpoints/
 .ruff_cache
+
+# PyCache
+**/__pycache__/
+
+# macOS file system cache files
+**/.DS_Store
